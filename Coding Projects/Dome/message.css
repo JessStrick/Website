@@ -1,0 +1,92 @@
+html, body{
+    background-color: black;
+    color: pink;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .center-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  .description {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .arched-title {
+    display: block;
+    margin: 0 auto;
+  }
+#Heart {
+    transition: 
+      opacity 0.6s ease,
+      filter 0.6s ease,
+      transform 0.6s ease;
+  }
+  
+#Heart.dissolve {
+    opacity: 0;
+    filter: blur(8px);
+    transform: scale(1.1);
+  }
+  #question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #question button {
+    width: 120px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 2px solid pink;
+    background: linear-gradient(135deg, pink, hotpink);
+    color: black;
+    cursor: pointer;
+    transition: transorm 0.2s ease, box-shadow 0.2s ease;
+  }
+  #question botton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px pink;
+  }
+  #question p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #noBtn:hover {
+    animation: shake 0.4s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  
+  
+
+  

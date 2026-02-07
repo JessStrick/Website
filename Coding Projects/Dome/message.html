@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Message</title>
+  <link rel="stylesheet" href="message.css">
+  <script src="message.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title" class="arched-title">Hello!</h1>
+
+    <img id="Heart" src="Heart.png" alt="Giant Heart" class="center-image">
+
+    <p id="prompt" class="description">
+      Click on the heart to continue!
+    </p>
+
+    <div id="question" style="display: none;">
+      <p>Will you be my Valentine?</p>
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+
+    <div id="result">
+      <h1 id="hoorayText" style="display:none;">🎉 Hooray!!! 🎉</h1>
+      <img id="fireworks" src="fireworks.gif" style="display:none;" class="center-image">
+      <audio id="yaySound" src="yay.mp3"></audio>
+    </div>
+  </div>
+</body>
+</html>
+
+
